@@ -1,0 +1,98 @@
+.adoption {
+  
+  height: 290vh;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: linear-gradient(
+      to bottom,
+      rgba(69, 68, 71, 0.8),
+      rgba(78, 45, 45, 0.5)
+    ),
+    url('../assets/dog3.jpg');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  text-align: center;
+  padding-top: 80px;
+}
+
+.adoption h1{
+  font-family: "Bokor", serif;
+  font-weight: 400;
+  font-style: normal;
+  background: -webkit-linear-gradient(45deg, #0e0244, #000000);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 50px;
+  animation: appear 3s linear;
+  animation-timeline: view();
+  animation-range: entry  0% cover 40%;
+  
+ 
+}
+.adoption h1 span {
+  display: inline-block;
+  transition: transform 0.3s ease, color 0.3s ease;
+  cursor: pointer;
+}
+
+/* Hover effect on each letter */
+.adoption h1 span:hover {
+  transform: rotate(5deg) scale(1.3); /* Slight rotation and scaling */
+  color: #f57c00; /* Change color */
+}
+.cat{
+  background: -webkit-linear-gradient(45deg, #000000, #0d0086);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+@keyframes appear {
+  from {
+    transform: scale(0.5);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+
+
+.column-in{
+  animation: appear 1s linear;
+  
+}
+.column-out{
+  animation: appear 3s linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 40%;
+}
+.column-out {
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.column-out img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  transition: transform 0.8s ease;
+}
+
+.column-out:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+.column-out:hover .layer {
+  height: 100%;
+}
+.para{
+  font-size: 25px;
+  
+}

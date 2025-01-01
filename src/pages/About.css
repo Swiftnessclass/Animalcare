@@ -1,0 +1,184 @@
+.about-us{
+  padding: 70px;
+  background: linear-gradient(to bottom, rgba(44, 62, 80, 0.8), rgba(44, 62, 80, 0.5)),
+              url('../assets/dog4.jpg');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat; 
+  color: #fff; 
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  height: 140vh;
+}
+.head{
+  margin-top: 8%;
+}
+
+.about-us h1{
+  color: black;
+  text-align: center;
+  animation: appear 3s linear;
+  animation-timeline: view();
+  animation-range: entry  0% cover 40%;
+}
+.about-us h2 {
+  color: #185a9d;
+  margin-bottom: 20px;
+  border-bottom: 3px solid #43cea2;
+  display: inline-block;
+  padding-bottom: 5px;
+  animation: appear 3s linear;
+  animation-timeline: view();
+  animation-range: entry  0% cover 40%;
+ 
+}
+
+.about-us p {
+  color: #000000;
+  font-size: 30px;
+  margin-bottom: 20px;
+  animation: fadeInUp 2s;
+  animation: appear 3s linear;
+  animation-timeline: view();
+  animation-range: entry  0% cover 40%;
+}
+
+/* List Styling */
+.about-us ul {
+  list-style: none;
+  padding: 0;
+  animation: appear 3s linear;
+  animation-timeline: view();
+  animation-range: entry  0% cover 40%;
+ }
+.about-us ul li {
+  background: url('https://cdn-icons-png.flaticon.com/512/847/847969.png') no-repeat left center;
+  background-size: 25px;
+  padding-left: 40px;
+  margin-bottom: 15px;
+  font-size: 1.1rem;
+  color: #000000;
+  animation: appear 3s linear;
+  animation-timeline: view();
+  animation-range: entry  0% cover 40%;
+}
+.about-usr ul li strong {
+  color: #185a9d;
+  animation: appear 3s linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 40%;
+}
+.about-us button{
+  padding: 12px 30px;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #050505;
+  background-color: #1abc9c;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  animation: appear 3s linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 40%;
+}
+.about-us button:hover {
+  background-color: #16a085;
+  transform: translateY(-3px);
+}
+
+.about-us button:active {
+  transform: translateY(0);
+}
+footer {
+  background: linear-gradient(90deg, #185a9d, #43cea2);
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+  height:2vh;
+  width: 100%;
+}
+@keyframes appear {
+  from {
+    transform: scale(0.5);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+.services-section {
+  text-align: center;
+  padding: 50px 20px;
+  background-color: #242222;
+  height: 50vh;
+  border-radius: 30px;
+}
+
+.services-section h2 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+  animation: appear 3s linear;
+  animation-timeline: view();
+  animation-range: entry  0% cover 40%;
+}
+
+.service-cards {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.card {
+  background: #f0f0f0;
+  border-radius: 8px;
+  padding: 20px;
+  width: 200px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  animation: appear 3s linear;
+  animation-timeline: view();
+  animation-range: entry  0% cover 40%;
+}
+
+.card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  animation: appear 3s linear;
+  animation-timeline: view();
+  animation-range: entry  0% cover 40%;
+}
+
+.card:hover {
+  transform: translateY(-10px); /* Moves the card up */
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
+  background-color: #f39c12;
+}
+
+.card:hover h3 {
+  color: #2575fc; /* Changes text color on hover */
+}
+
+/* Keyframe for card animation */
+@keyframes cardBounce {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.card {
+  animation: cardBounce 2s ease-in-out infinite; /* Bouncing animation */
+}
+.sec{
+  background-color: #000000;
+}
+i{
+  font-size: 30px;
+}

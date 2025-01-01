@@ -1,0 +1,147 @@
+.donation {
+  height: 180vh;
+  padding: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  background: linear-gradient(
+      to bottom, 
+      rgba(162, 141, 219, 0.8), 
+      rgba(167, 66, 66, 0.5)
+    ),
+    url('../assets/feed.jpg');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+.ver-head{
+  margin-top: 10%;
+}
+h1{
+  color: black;
+}
+
+.vertical-heading {
+  writing-mode:horizontal-tb;
+  font-size: 2rem;
+  color: #fff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+  letter-spacing: 2px;
+  line-height: 4rem;
+  font-weight: bold;
+  margin-left: 20px;
+  background: -webkit-linear-gradient(45deg, #bb03f3, #fa0101);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: appear 3s linear;
+  animation-timeline: view();
+  animation-range: entry  0% cover 40%;
+}
+
+.button-container {
+  position: relative; /* Ensure the button is relative to the section */
+  margin-left: 20px;
+  margin-bottom: 15%;
+}
+.QR{
+  height: 150px;
+  width: 150px;
+  border-radius: 20px;
+  animation: appear 3s linear;
+  animation-timeline: view();
+  animation-range: entry  0% cover 40%;
+}
+
+.donate-button {
+  padding: 15px 30px;
+  background-color: #f57c00;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s, background-color 0.2s;
+  animation: appear 3s linear;
+  animation-timeline: view();
+  animation-range: entry  0% cover 40%;
+}
+
+.donate-button:hover {
+  transform: scale(1.1);
+  background-color: #ff9800;
+}
+.form-container {
+  position: absolute;
+  top: 110px;
+  right: 80px; /* Moved it slightly left */
+  background-color: rgba(20, 20, 20, 0.9);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  width:400px;
+  animation: appear 3s linear;
+  animation-timeline: view();
+  animation-range: entry  0% cover 40%;
+  margin-top: 15%;
+}
+
+.form-container h2 {
+  margin: 0 0 20px 0;
+  font-size: 1.5rem;
+  color: #dbd4d4;
+  text-align: center;
+
+}
+
+.form-container label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #fff6f6;
+}
+
+.form-container input {
+  width: 70%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+  color: white;
+}
+
+.form-container .submit-button {
+  width: 40%;
+  padding: 10px;
+  background-color: #f57c00;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s, background-color 0.2s;
+}
+
+.form-container .submit-button:hover {
+  transform: scale(1.05);
+  background-color: #ff9800;
+}
+@keyframes appear {
+  from {
+    transform: scale(0.5);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+.button-container .para{
+  color: black;
+}

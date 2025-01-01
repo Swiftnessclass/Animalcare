@@ -1,0 +1,143 @@
+#contact1 {
+  
+  padding: 20px;
+  background: 
+  url('../assets/feed1.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 140vh;
+  
+}
+.contact {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.contact-left, .contact-right {
+  flex: 1;
+  padding: 20px;
+}
+
+
+.sub-title {
+  font-size: 24px;
+  font-weight: bold;
+  color: #e60000;
+  margin-bottom: 20px;
+  animation: appear 3s linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 40%;
+}
+
+p {
+  font-size: 16px;
+  margin: 10px 0;
+  animation: appear 3s linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 40%;
+}
+
+#icon {
+  margin-right: 10px;
+  animation: appear 3s linear;
+  animation-timeline: view();
+  animation-range: entry  0% cover 40%;
+}
+
+.contact-icon a {
+  margin: 5px;
+  font-size: 24px;
+  text-decoration: none;
+  transition: transform 0.2s;
+}
+
+.contact-icon a:hover {
+  transform: scale(1.2);
+}
+
+.but2 {
+  display: inline-block;
+  padding: 10px 20px;
+  background: #e60000;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background 0.3s;
+  text-align: center;
+  animation: appear 3s linear;
+  animation-timeline: view();
+  animation-range: entry  0% cover 40%;
+}
+
+.but2:hover {
+  background: #cc0000;
+}
+
+form input, form textarea {
+  width: 100%;
+  margin: 10px 0;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  animation: appear 3s linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 40%;
+}
+
+form button {
+  width: 100%;
+  padding: 10px;
+  background: #e60000;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s;
+  animation: appear 3s linear;
+  animation-timeline: view();
+  animation-range: entry  0% cover 40%;
+}
+
+form button:hover {
+  background: #cc0000;
+}
+
+.bla {
+  margin-top: 10px;
+  animation: appear 3s linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 40%;
+}
+
+.bla a {
+  color: #000000;
+  text-decoration: none;
+  font-size: 16px;
+  animation: appear 3s linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 40%;
+}
+
+.bla a:hover {
+  text-decoration: underline;
+}
+input{
+  background-color: #0c0909;
+  animation: appear 3s linear;
+  animation-timeline: view();
+  animation-range: entry 0;
+}
+textarea{
+  background-color: #0c0909;
+  color: white;
+
+}
